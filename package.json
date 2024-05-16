@@ -1,0 +1,42 @@
+{
+  "name": "frontblog",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "dompurify": "^3.1.3",
+    "dotenv": "^16.4.5",
+    "lenis": "^1.0.45",
+    "markdown-it": "^14.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7",
+    "pinia": "^2.1.7",
+    "slugify": "^1.6.6",
+    "turndown": "^7.1.3",
+    "vue": "^3.4.21",
+    "vue-markdown-render": "^2.1.1",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/dompurify": "^3.0.5",
+    "@types/markdown-it": "^14.1.1",
+    "@types/marked": "^6.0.0",
+    "@types/node": "^20.12.11",
+    "@types/turndown": "^5.0.4",
+    "@types/vue-markdown": "^2.2.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/tsconfig": "^0.5.1",
+    "npm-run-all2": "^6.1.2",
+    "typescript": "~5.4.0",
+    "vite": "^5.2.8",
+    "vue-tsc": "^2.0.11"
+  }
+}

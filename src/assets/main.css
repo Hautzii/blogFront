@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Synonym';
+    src: url(/fonts/Synonym-Variable.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Amulya';
+    src: url(/fonts/Amulya-Variable.ttf) format('truetype');
+}
+
+:root {
+    --black : #10100e;
+    --white : #ffffe6;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
